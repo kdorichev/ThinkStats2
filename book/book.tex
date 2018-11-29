@@ -1202,24 +1202,24 @@ value	label                  Total
 And here are the value counts:
 
 \begin{verbatim}
->>> df.birthwgt_lb.value_counts(sort=False)
-0        8
-1       40
-2       53
-3       98
-4      229
-5      697
-6     2223
-7     3049
-8     1889
-9      623
-10     132
-11      26
-12      10
-13       3
-14       3
-15       1
-51       1
+>>> df.birthwgt_lb.value_counts().sort_index()
+0.0        8
+1.0       40
+2.0       53
+3.0       98
+4.0      229
+5.0      697
+6.0     2223
+7.0     3049
+8.0     1889
+9.0      623
+10.0     132
+11.0      26
+12.0      10
+13.0       3
+14.0       3
+15.0       1
+51.0       1
 \end{verbatim}
 
 The counts for 6, 7, and 8 pounds check out, and if you add
